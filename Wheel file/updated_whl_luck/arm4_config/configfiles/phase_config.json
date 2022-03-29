@@ -1,0 +1,404 @@
+{
+    "phase letter code":{
+        "VD": "Vehicular Default phase",
+        "FI": "Vehicular Full Indicative phase",
+        "FG": "Vehicular Filter Green",
+        "PI": "Vehicular Partial Indicative green",
+        "PE": "Pedestrian phase",
+        "CY": "Cycle phase",
+        "EQ": "Equestrian phase",
+        "BT": "Bus  Rapid Transit (BRT) phase",
+        "RA": "Ramp Metering Advisory phase",
+        "RM": "Ramp Metering Default phase",
+        "TR": "Trams phase",
+        "RS": "Regulatory signs and secret signs",
+        "IL": "Interlocks phase",
+        "WW": "Waterways"
+    },
+    "VD": [
+        {
+            "priority": 0,
+            "status":{       
+                "starting amber": {
+                    "signal_type": {
+                        "R": "S",
+                        "A": "S"
+                    },
+                    "duration": 4
+                },
+                "leaving amber": {
+                    "signal_type": {
+                        "A": "S"
+                    },
+                    "duration": 4
+                },
+                "active": {
+                    "signal_type": {
+                        "G": null
+                    }
+                },
+                "inactive":{
+                    "signal_type": {
+                        "R": null
+                    }
+                }
+            }
+        }
+    ],
+    "FI": [
+        {
+            "priority": 0,
+            "status":{
+                "starting amber": {
+                    "signal_type": 
+                    {
+                        "R": "S",
+                        "A": "S"
+                    },
+                    "duration": 4
+                },
+                "leaving amber": {
+                    "signal_type": {
+                        "A":"S"
+                    },
+                    "duration": 4
+                },
+                "active": {
+                    "signal_type": {
+                        "G": null
+                    }
+                },
+                "inactive":{
+                    "signal_type": {
+                        "R": null
+                    }
+                }
+            }
+        }
+    ],
+    "FG": [
+        {
+            "grouping": "transport_link",
+            "to_phase_type": ["VD"],
+            "from_phase_state": ["S"],
+            "priority": 3,
+            "status":{
+                "active": {
+                    "signal_type": {}
+                }
+            }
+        },
+        {
+            "grouping": "transport_link",
+            "to_phase_type": ["VD", "FI"],
+            "from_phase_state": ["S"],
+            "priority": 2,
+            "status":{
+                "leaving amber": {
+                    "signal_type": {
+                        "G": "B"
+                    },
+                    "duration": 4
+                }
+            }
+        },
+        {
+            "grouping": "transport_link",
+            "to_phase_type": ["VD", "FI"],
+            "from_phase_state": ["B"],
+            "priority": 1,
+            "status":{
+                "leaving amber": {
+                    "signal_type": {},
+                    "duration": 0
+                }
+            }
+        },
+        {
+            "priority": 0,
+            "status":{
+                "starting amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "leaving amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "active": {
+                    "signal_type": {
+                        "G": null
+                    }
+                },
+                "inactive":{
+                    "signal_type": {}
+                }
+            }
+        }
+    ],
+    "PI": [
+        {
+            "grouping": "transport_link",
+            "to_phase_type": ["VD", "FI"],
+            "from_phase_state": ["S"],
+            "priority": 2,
+            "status":{
+                "leaving amber": {
+                    "signal_type": {
+                        "G": "B"
+                    },
+                    "duration": 4
+                }
+            }
+        },
+        {
+            "grouping": "transport_link",
+            "to_phase_type": ["VD", "FI"],
+            "from_phase_state": ["B"],
+            "priority": 1,
+            "status":{
+                "leaving amber": {
+                    "signal_type": {}
+                },
+                "duration": 0
+            }
+        },
+        {
+            "priority": 0,
+            "status":{
+                "starting amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "leaving amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "active": {
+                    "signal_type": {
+                        "G": null
+                    }
+                },
+                "inactive":{
+                    "signal_type": {}
+                }
+            }
+        }
+    ],
+    "PE": [
+        {
+            "priority": 0,
+            "status":{
+                "starting amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "leaving amber": {
+                    "signal_type": {
+                        "G": "B",
+                        "B": "S"
+                    },
+                    "duration": 4
+                },
+                "active": {
+                    "signal_type": {
+                        "G": null,
+                        "S": null
+                    }
+                },
+                "inactive":{
+                    "signal_type": {
+                        "R": null
+                    }
+                }
+            }
+        }
+    ],
+    "CY": [
+        {
+            "priority": 0,
+            "status":{       
+                "starting amber": {
+                    "signal_type": {
+                        "R": "S",
+                        "A": "S"
+                    },
+                    "duration": 4
+                },
+                "leaving amber": {
+                    "signal_type": {
+                        "A": "S"
+                    },
+                    "duration": 4
+                },
+                "active": {
+                    "signal_type": {
+                        "G": null,
+                        "S": null
+                    }
+                },
+                "inactive":{
+                    "signal_type": {
+                        "R": null
+                    }
+                }
+            }
+        }
+    ],
+    "EQ": [
+        {
+            "starting amber": {
+                "signal_type": {},
+                "duration": 0
+            },
+            "leaving amber": {
+                "signal_type": {
+                    "G": "B",
+                    "B": "S"
+                },
+                "duration": 4
+            },
+            "active": {
+                "signal_type": {
+                    "G": null,
+                    "S": null
+                }
+            },
+            "inactive":{
+                "signal_type": {
+                    "R": null
+                }
+            }
+        }
+    ],
+    "BT":[
+        {
+            "priority": 0,
+            "status":{       
+                "starting amber": {
+                    "signal_type": {
+                        "R": "S",
+                        "A": "S"
+                    },
+                    "duration": 4
+                },
+                "leaving amber": {
+                    "signal_type": {
+                        "A": "S"
+                    },
+                    "duration": 4
+                },
+                "active": {
+                    "signal_type": {
+                        "G": null
+                    }
+                },
+                "inactive":{
+                    "signal_type": {
+                        "R": null
+                    }
+                }
+            }
+        }
+    ],
+    "RA": [
+        {
+            "priority": 0,
+            "status":{       
+                "starting amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "leaving amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "active": {
+                    "signal_type": {
+                        "R": "B",
+                        "A": "B"
+                    }
+                },
+                "inactive":{
+                    "signal_type": {}
+                }
+            }
+        }
+    ],
+    "RM": [
+        {
+            "priority": 0,
+            "status":{       
+                "starting amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "leaving amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "active": {
+                    "signal_type": {
+                        "G": "S"
+                    }
+                },
+                "inactive":{
+                    "signal_type": {
+                        "R": "S"
+                    }
+                }
+            }
+        }
+    ],
+    "RS": [
+        {
+            "priority": 0,
+            "status":{       
+                "starting amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "leaving amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "active": {
+                    "signal_type": {
+                        "I": "S"
+                    }
+                },
+                "inactive":{
+                    "signal_type": {}
+                }
+            }
+        }
+    ],
+    "WW":[
+        {
+            "priority": 0,
+            "status":{       
+                "starting amber": {
+                    "signal_type": {
+                        "R": "S",
+                        "G": "S"
+                    },
+                    "duration": 4
+                },
+                "leaving amber": {
+                    "signal_type": {},
+                    "duration": 0
+                },
+                "active": {
+                    "signal_type": {
+                        "G": "S"
+                    }
+                },
+                "inactive":{
+                    "signal_type": {
+                        "R": "S"
+                    }
+                }
+            }
+        }
+    ]
+}

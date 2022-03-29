@@ -1,0 +1,50 @@
+{
+    "1": [
+        {
+            "plan_number": 1,
+            "plan_stages" : [
+                {
+                    "stage": 3,
+                    "duration": 30,
+                    "type": "N",
+                    "phases": []
+                },
+                {
+                    "stage": 4,
+                    "duration": 30,
+                    "type": "N"
+                },
+                {
+                    "stage": 5,
+                    "duration": 30,
+                    "type": "N"
+                }
+            ]
+        },
+        {
+            "plan_number": 2,
+            "plan_stages" : [
+                {
+                    "stage": 3,
+                    "duration": 40,
+                    "type": "N",
+                    "phases": []
+                },
+                {
+                    "stage": 4,
+                    "duration": 40,
+                    "type": "N"
+                },
+                {
+                    "stage": 5,
+                    "duration": 40,
+                    "type": "N"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+

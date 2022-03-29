@@ -1,0 +1,67 @@
+{
+    "1": [
+        {
+            "plan_number": 1,
+            "plan_stages" : [
+                {
+                    "stage": 3,
+                    "duration": 30,
+                    "type": "N",
+                    "phases": []
+                },
+                {
+                    "stage": 7,
+                    "duration": 30,
+                    "type": "N"
+                },
+                {
+                    "stage": 11,
+                    "duration": 30,
+                    "type": "N"
+                },
+		{
+                    "stage": 15,
+                    "duration": 30,
+                    "type": "N"
+                }
+            ]
+        },
+        {
+            "plan_number": 2,
+            "plan_stages" : [
+                {
+                    "stage": 3,
+                    "duration": 40,
+                    "type": "N",
+                    "phases": []
+                },
+                {
+                    "stage": 7,
+                    "duration": 40,
+                    "type": "N"
+                },
+                {
+                    "stage": 11,
+                    "duration": 40,
+                    "type": "N"
+                },
+		{
+                    "stage": 15,
+                    "duration": 40,
+                    "type": "N"
+                }
+            ]
+        },
+        {
+            "plan_number": 3,
+            "plan_stages" : [
+                {
+                    "stage": 6,
+                    "duration": 5,
+                    "type": "N",
+                    "phases": []
+                }
+            ]
+        }
+    ]
+}

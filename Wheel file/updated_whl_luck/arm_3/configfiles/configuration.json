@@ -1,0 +1,57 @@
+{
+    "det_zones" : [
+        "J021_L01",
+        "J021_L02",
+        "J021_L03"
+    ],
+    "stg_detectors": {
+        "3": ["J021_L01"],
+        "4": ["J021_L02"],
+        "5": ["J021_L03"],
+        "13": ["J021_L01"],
+        "14": ["J021_L02"],
+        "15": ["J021_L03"]
+    },
+    "thresholds": {
+        "cumulative_threshold": {
+            "peak": 1,
+            "offpeak": 2
+        },
+        "threshold": {
+            "peak": 2,
+            "offpeak": 1
+        }
+    },
+    "peaks": {
+        "weekday": {
+            "peak_start": ["03:30:00"],
+            "peak_end": ["06:30:00"]
+        },
+        "weekend": {
+            "peak_start": ["12:30:00"],
+            "peak_end": ["14:30:00"]
+        }
+    },
+    "num_lamps": 28,
+    "lpu": {
+            "ip": "10.125.103.177",
+            "port": 3030,
+            "username": "traffScan@itspe",
+            "password": "tScan@itspe123"
+    },
+    "start_time": "01:00:00",
+    "end_time": "15:30:00",
+    "offline_as_group": "1",
+    "debug_level": {
+            "stage_logs": 1,
+            "gap_logs": 1
+    },
+    "http_urls":{
+        "cycle_data": "http://localhost/tis/api/rest/atcs/readcycledata.php",
+        "detector_data": "http://localhost/tis/api/rest/atcs/readdetectordata.php"
+    }
+}
+
+
+
+

@@ -1,0 +1,124 @@
+{
+    "phases": {
+        "A": {
+            "phase_type": "VD",
+            "lines": {
+                "1": "R",
+                "2": "A",
+                "3": "G"
+            },
+            "IOlines": {},
+            "detectors": "J021_L01_001",
+            "transport_link": "J021_L01",
+            "phase_period_limits": {
+                "0": {
+                    "min": 10,
+                    "max": 45
+                },
+                "1": {
+                    "min": 10,
+                    "max": 45
+                }
+            }
+        },
+        "B": {
+            "phase_type": "VD",
+            "lines": {
+                "4": "R",
+                "5": "A",
+                "6": "G"
+            },
+            "IOlines": {},
+            "detectors": "J021_L02_001",
+            "transport_link": "J021_L02",
+            "phase_period_limits": {
+                "0": {
+                    "min": 10,
+                    "max": 45
+                },
+                "1": {
+                    "min": 10,
+                    "max": 45
+                }
+            }
+        },
+        "C": {
+            "phase_type": "VD",
+            "lines": {
+                "7": "R",
+                "8": "A",
+                "9": "G"
+            },
+            "IOlines": {},
+            "detectors": "J021_L03_001",
+            "transport_link": "J021_L03",
+            "phase_period_limits": {
+                "0": {
+                    "min": 10,
+                    "max": 45
+                },
+                "1": {
+                    "min": 10,
+                    "max": 45
+                }
+            }
+        },
+        "D": {
+            "phase_type": "VD",
+            "lines": {
+                "10": "R",
+                "11": "A",
+                "10": "G"
+            },
+            "IOlines": {},
+            "detectors": "J021_L04_001",
+            "transport_link": "J021_L04",
+            "phase_period_limits": {
+                "0": {
+                    "min": 10,
+                    "max": 30
+                },
+                "1": {
+                    "min": 20,
+                    "max": 60
+                }
+            }
+        }
+    },
+    "stages": {
+        "0": {
+            "stream": 1,
+            "phases": {},
+            "max_duration": 60,
+            "min_duration": 30
+        },
+        "3": {
+            "stream": 1,
+            "phases": {
+                "A": "S"
+            },
+            "max_duration": 45,
+            "min_duration": 10
+        },
+        "4": {
+            "stream": 1,
+            "phases": {
+                "B": "S"
+            },
+            "max_duration": 45,
+            "min_duration": 10
+        },
+        "5": {
+            "stream": 1,
+            "phases": {
+                "C": "S"
+            },
+            "max_duration": 45,
+            "min_duration": 10
+        }
+    }
+}
+
+
+
+
