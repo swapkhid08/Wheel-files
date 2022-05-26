@@ -1,0 +1,124 @@
+{
+     "1": [
+          {
+               "plan_number": 1,
+               "plan_stages": [
+                    {
+                         "stage": 3,
+                         "type": "R",
+                         "duration": 20,
+                         "phases": [
+                              {
+                                   "phase": "A",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "B",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "C",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "D",
+                                   "delay": 0
+                              }
+                         ]
+                    },
+                    {
+                         "stage": 4,
+                         "type": "R",
+                         "duration": 20,
+                         "phases": [
+                              {
+                                   "phase": "D",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "E",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "F",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "G",
+                                   "delay": 0
+                              }
+                         ]
+                    },
+                    {
+                         "stage": 5,
+                         "type": "R",
+                         "duration": 20,
+                         "phases": [
+                              {
+                                   "phase": "G",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "H",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "I",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "J",
+                                   "delay": 0
+                              }
+                         ]
+                    },
+                    {
+                         "stage": 6,
+                         "type": "R",
+                         "duration": 20,
+                         "phases": [
+                              {
+                                   "phase": "J",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "K",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "L",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "A",
+                                   "delay": 0
+                              }
+                         ]
+                    },
+                    {
+                         "stage": 7,
+                         "type": "R",
+                         "duration": 20,
+                         "phases": [
+                              {
+                                   "phase": "M",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "N",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "O",
+                                   "delay": 0
+                              },
+                              {
+                                   "phase": "P",
+                                   "delay": 0
+                              }
+                         ]
+                    }
+               ]
+          }
+     ]
+}

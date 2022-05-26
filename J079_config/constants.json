@@ -1,0 +1,24 @@
+{
+	"tis_mode": {
+		"init": 0,
+		"offline": -1,
+		"fbft":1,
+		"atcs": 2,
+		"flash": 3,
+		"lampsoff": 4,
+		"va": {
+			"ft": 0,
+			"ftva": 1,
+			"va": 2,
+			"sava": 3
+		},
+		"tis_manual": 5,
+		"lft": 6
+	},
+	"controller_mode": {
+		"locl": 1,
+		"atcs": 2,
+		"flash": 3,
+		"lampsoff": 4
+	}
+}
